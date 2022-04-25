@@ -1,0 +1,98 @@
+body{
+    background-color: beige;
+
+}
+
+.calculator {
+    background-color: grey ;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 550px;
+    width: 400px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 150px 1fr;
+}
+
+.display-container{
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 10px;
+    background-color: white;
+    height: 150px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: right;
+}
+
+.display{
+    position: relative;
+    
+}
+
+#history{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   font-size: 20px;
+}
+
+#result{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   font-size: 40px;
+}
+.button-container{
+    padding-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    justify-items: center;
+}
+
+.action{
+    background-color: salmon;
+}
+
+#clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    justify-self: left;
+    margin-left: 10px;
+}
+
+#delete{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-self: right;
+    margin-right: 10px;
+}
+
+.operand{
+    background-color: skyblue;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 50%;
+    height: 66px;
+    width: 66px;
+    opacity: 0.7;
+}
+
+button:hover{
+    opacity: 1;
+}
